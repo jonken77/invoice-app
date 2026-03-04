@@ -1,0 +1,495 @@
+/* Exact original CSS values */
+.page {
+  width: 794px;
+  height: 1123px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.main_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dbe3de;
+  padding: 24.026px 42.568px;
+}
+
+.logo {
+  height: 151px;
+}
+
+.invoice {
+  padding-top: 85.522px;
+  font-family: "Geist", sans-serif;
+  letter-spacing: 12px;
+  background-color: #dbe3de;
+}
+
+.deposit {
+  font-size: 40px;
+  color: #009adc;
+  font-family: "Geist", sans-serif;
+  letter-spacing: 12px;
+  width: 246.567px;
+  display: block;
+  background-color: #dbe3de;
+}
+
+.invoice-text {
+  font-size: 32px;
+  font-family: "Geist", sans-serif;
+  letter-spacing: 12px;
+  background-color: #dbe3de;
+}
+
+.numberdate {
+  display: flex;
+  justify-content: space-between;
+  padding: 20.643px 42.568px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.addresses {
+  display: flex;
+  justify-content: space-between;
+  padding: 11.446px 42.568px;
+  background-color: #e3dbdb;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+.billto ul, .contact ul {
+  list-style: none;
+}
+
+.contact {
+  text-align: right;
+  background-color: #e3dbdb;
+}
+
+.bill {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.email {
+  color: #0000ff;
+}
+
+/* EXACT .maintable specifications */
+.maintable {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding-left: 42.568px;
+  padding-right: 42.568px;
+  padding-top: 13.322px;
+  padding-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  background-color: #fff;
+  width: 100%;
+}
+
+/* Reference - exactly 15px above footer */
+.reference {
+  font-size: 14px;
+  padding-bottom: 15px;
+  padding-top: 0;
+  color: #514a4a;
+  margin-left: 42.568px;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+/* Table styling - EXACT row heights */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  height: 100%;
+}
+
+/* Force exact row heights */
+tr {
+  height: 26.3px;
+  max-height: 26.3px;
+  min-height: 26.3px;
+}
+
+th, td {
+  height: 26.3px !important;
+  max-height: 26.3px !important;
+  min-height: 26.3px !important;
+  border-left: 2px solid #181515;
+  border-right: 2px solid #181515;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  line-height: 26.3px;
+  font-size: 11px;
+  overflow: hidden;
+}
+
+th {
+  border: 2px solid #181515;
+  background-color: #dbe3de;
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 26.3px;
+}
+
+.description01 {
+  text-align: left;
+  padding-left: 8px;
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 26.3px;
+}
+
+.description02 {
+  border: 2px solid #181515;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 26.3px;
+}
+
+.negative-amount {
+  color: #e53e3e;
+}
+
+/* Row striping */
+tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) td {
+  background-color: #e6e6e6;
+}
+
+tr:last-child td {
+  background-color: #f2f2f2;
+}
+
+tr:first-child th {
+  background-color: #dbe3de;
+}
+
+/* Footer - EXACT original specifications */
+footer {
+  width: 794px;
+  height: 126.665px;
+  background-color: #b7b7c8;
+  display: grid;
+  grid-template-columns: 431px 127.736px 234.036px;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+/* Pay section - exact dimensions */
+.pay {
+  width: 127.733px;
+  height: 62.666px;
+  font-size: 24px;
+  font-family: "Geist", sans-serif;
+  color: #dbdbe3;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Contact section in footer - exact dimensions */
+footer .contact {
+  width: 234.033px;
+  height: 63.3334px;
+  background-color: #b7b7c8;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contact01 {
+  background-color: #b7b7c8;
+  margin-right: 42.568px;
+  font-size: 11px;
+  line-height: normal;
+}
+
+.contact02 {
+  background-color: #b7b7c8;
+  list-style: none;
+  width: 100%;
+}
+
+/* Column widths */
+.item { width: 8%; }
+.description { width: 47%; }
+.quantity { width: 10%; }
+.unit { width: 15%; }
+.total { width: 20%; }
+
+@media print {
+  .page {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    box-shadow: none;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    margin: 0;
+    padding: 0;
+  }
+  footer {
+    page-break-before: avoid;
+  }
+  .sidebar, .app-container {
+    display: none !important;
+  }
+}
+
+/* App Layout */
+.app-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 320px;
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 100vh;
+  flex-shrink: 0;
+  border-right: 1px solid #e0e0e0;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar h3 {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar h3:hover {
+  color: #009adc;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #009adc;
+}
+
+.item-row {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.item-row .form-group {
+  margin-bottom: 8px;
+}
+
+.form-group-inline {
+  display: flex;
+  gap: 10px;
+}
+
+.form-group-inline .form-group {
+  flex: 1;
+}
+
+.item-row .remove-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #e53e3e;
+  color: #fff;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 8px;
+  background-color: #009adc;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.add-btn:hover {
+  background-color: #0077b6;
+}
+
+.save-btn {
+  width: 100%;
+  padding: 8px;
+  background-color: #38a169;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.save-btn:hover {
+  background-color: #2f855a;
+}
+
+.new-btn {
+  width: 100%;
+  padding: 8px;
+  background-color: #009adc;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.new-btn:hover {
+  background-color: #0077b6;
+}
+
+.saved-invoices-list {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 8px;
+}
+
+.no-invoices {
+  color: #999;
+  font-size: 11px;
+  text-align: center;
+  padding: 8px;
+}
+
+.saved-invoice-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  margin-bottom: 6px;
+}
+
+.saved-invoice-info {
+  cursor: pointer;
+  flex: 1;
+}
+
+.saved-invoice-number {
+  font-weight: bold;
+  font-size: 12px;
+  color: #009adc;
+}
+
+.saved-invoice-meta {
+  font-size: 11px;
+  color: #666;
+}
+
+.delete-invoice-btn {
+  background: #e53e3e;
+  color: #fff;
+  border: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  margin-left: 8px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ccc;
+  overflow-y: auto;
+}
+
+@media print {
+  .page {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    box-shadow: none;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    margin: 0;
+    padding: 0;
+  }
+  footer {
+    page-break-before: avoid;
+  }
+  .sidebar, .app-container {
+    display: none !important;
+  }
+}

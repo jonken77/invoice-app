@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  @media print {
+    body {
+      background: none;
+      padding: 0;
+      margin: 0;
+    }
+    html, body {
+      height: auto;
+      overflow: visible;
+    }
+    .sidebar {
+      display: none !important;
+    }
+    .app-container {
+      display: block !important;
+    }
+    .main-content {
+      padding: 0 !important;
+      background: none !important;
+    }
+  }
+}
